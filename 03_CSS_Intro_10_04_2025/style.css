@@ -1,0 +1,48 @@
+body{
+    background-color: whitesmoke;
+}
+
+form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#EmailID, #PasswordId, #NameID, #PhoneId {
+    width: 100%;
+    margin: 5px 0 5px 5px;
+    border-radius: 5px;
+    border: #ccc;
+}
+
+div{
+    margin: 20px 0;
+}
+
+.btn{
+    width: fit-content;
+    margin:20px auto 30px
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+button[type=reset] {
+    background-color: #db0909;
+}
+
+button[type=submit] {
+    background-color: #0bdd40;
+}
+
+input{
+    height: 30px;
+}

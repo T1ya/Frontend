@@ -1,0 +1,145 @@
+/* Общие стили для страницы */
+body {
+  background-color: whitesmoke;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-align: left;
+}
+/*выравниваем картинку с формой по одной ширине*/
+form,
+img {
+  max-width: 600px;
+  width: 100%;
+  margin: 10px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+/* но для формы задаём отступ для текста */
+form {
+  padding: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  resize: none;
+}
+/* радио-кнопки и их лейблы организуем в линию  */
+.radio-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+/*радио нужно поднять немного, иначе они ощутимо ниже лейблов */
+input[type="radio"] {
+  margin-bottom: 10px;
+  align-items: end;
+}
+/* чекбоксы организуем в в столбец (лейбл+кнопка) */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+/* задам фиксированную ширину контейнера, чтобы не занимало весь размер формы */
+.checkbox-group div {
+  width: 140px;
+  display: flex;
+  flex-direction: row;
+  gap: 55px;
+  margin: 0;
+}
+/* 
+  хочу выровнять чекбоксы по правому краю, независимо от размера лейбла.
+  чекбоксы почему-то выравниваются только отрицательным верхним отступом... 
+*/
+.checkbox-group input[type="checkbox"] {
+  margin-left: auto;
+  margin-top: -5px;
+}
+/* выравниваем контактные данные в столбец (лейбл+группа) */
+.contact-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact-group div {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin: 0;
+  width: 100%;
+}
+
+.contact-group label {
+  text-align: left;
+  width: 90px;
+}
+/* тоже странное выравнивание для инпута (он опять получается ниже текста) */
+.contact-group input {
+  margin-top: -5px;
+}
+
+div {
+  margin: 20px 0;
+}
+
+.btn {
+  width: fit-content;
+  margin: 20px auto 30px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+}
+
+button[type="reset"] {
+  background-color: #ff4d4d;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+}
+/* немного увеличим яркость при наведении на кнопку */
+button:hover {
+  filter: brightness(1.3);
+}

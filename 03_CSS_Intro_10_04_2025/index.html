@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* h1 {
+        font-size: 40px;
+      }
+
+      .header {
+        color: aqua;
+      }
+
+      #name, h1 {
+        padding: 5px;
+      } */
+    </style>
+    <link rel="stylesheet" href="./style.css">
+    <title>Form</title>
+  </head>
+  <!-- 
+    Где будет задаваться стилистика
+  1. inline-styles (в той же строке где тэг, в атрибуте style)
+  2. в отдельном тэге <style>
+  3. в отдельном файле
+    
+    С помощью чего мы выбираем элемент(-ы) для стилизации (selectors)
+  1. По имени тэга;
+  2. По имени класса;
+  3. По id.
+  -->
+  <body>
+    <h1 class="header" style="text-align: center">Signup form</h1>
+    <form action="/register">
+      <div>
+        <label for="NameID">Name:</label>
+        <input
+          id="NameID"
+          type="text"
+          placeholder="Enter your name..."
+          required
+        />
+      </div>
+
+      <div>
+        <label for="EmailID">Email:</label>
+        <input
+          id="EmailID"
+          type="email"
+          placeholder="Enter your email..."
+          required
+        />
+      </div>
+
+      <div>
+        <label for="PasswordId">Password:</label>
+        <input
+          id="PasswordId"
+          type="password"
+          pattern="(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[@$!%*?&]).{8, }"
+          title="Should contains 1..9 A-z and special symbols"
+          placeholder="Enter your password..."
+          required
+        />
+      </div>
+
+      <div>
+        <label for="PhoneId">Phone:</label>
+        <input
+          id="PhoneId"
+          type="tel"
+          pattern="\+?[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+          title="Example: 123-456-7890"
+          placeholder="Enter your phone number..."
+          required
+        />
+      </div>
+
+      <div>
+        <label for="HobbyId">Hobby:</label>
+        <select id="HobbyId" required>
+          <option value="">Choose your hobby</option>
+          <option value="sport">Volleyball</option>
+          <option value="sport">Football</option>
+          <option value="music">Piano</option>
+          <option value="music">Guitar</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="MaleID">Herr</label>
+        <input id="MaleID" name="Gender" type="radio" required />
+        <label for="    FemaleID">Frau</label>
+        <input id="FemaleID" name="Gender" type="radio" />
+      </div>
+
+      <div>
+        <label for="AgreementID">Agreement</label>
+        <input id="AgreementID" type="Checkbox" required />
+      </div>
+
+      <div class="btn">
+        <button type="reset">Reset</button>
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </body>
+</html>

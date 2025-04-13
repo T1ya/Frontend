@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Pizza</title>
+  </head>
+  <body>
+    <h1>Добро пожаловать</h1>
+    <img
+      src="https://media.istockphoto.com/id/2175645047/de/foto/pizza-margherita-echte-italienische-und-neapolitanische-pizza-direkt-aus-dem-ofen.jpg?s=1024x1024&w=is&k=20&c=641pX5rQO3VfkJi9r9AQIrLsOkFVoRRvcddwgMIDVb4="
+      alt="Pizza img"
+      width="400px"
+    />
+    <form action="/register">
+      <h2>Выберите Вашу пиццу!</h2>
+
+      <h3>Диаметр:</h3>
+      <div class="radio-group">
+        <label for="Size30ID">30 см:</label>
+        <input id="Size30ID" name="Diameter" type="radio" required />
+        <label for="Size45ID">45 см:</label>
+        <input id="Size45ID" name="Diameter" type="radio" />
+        <label for="Size60ID">60 см:</label>
+        <input id="Size60ID" name="Diameter" type="radio" />
+      </div>
+
+      <h3>Пицца:</h3>
+      <div>
+        <select id="PizzaID" required>
+          <option value="">какую приготовить?</option>
+          <option value="Margerita">Маргарита</option>
+          <option value="FourCheese">4 сыра</option>
+          <option value="Pepperoni">Пепперони</option>
+          <option value="Diavola">Дьявола</option>
+        </select>
+      </div>
+
+      <h3>Добавки:</h3>
+      <div class="checkbox-group">
+        <div>
+          <label for="CheeseId">Сыр</label>
+          <input id="CheeseId" type="checkbox" />
+        </div>
+
+        <div>
+          <label for="MushroomsId">Грибы</label>
+          <input id="MushroomsId" type="checkbox" />
+        </div>
+
+        <div>
+          <label for="OnionID">Лук</label>
+          <input id="OnionID" type="checkbox" />
+        </div>
+
+        <div>
+          <label for="GreenId">Базилик</label>
+          <input id="GreenId" type="checkbox" />
+        </div>
+
+        <div>
+          <label for="SalamiID">Салями</label>
+          <input id="SalamiID" type="checkbox" />
+        </div>
+
+        <div>
+          <label for="SauceID">Соус</label>
+          <input id="SauceID" type="checkbox" />
+        </div>
+      </div>
+
+      <h3>Дополнительно:</h3>
+      <div>  
+        <textarea
+          id="CommentsID"
+          rows="4"
+          cols="40"
+          placeholder="Напишите Ваши дополнения к заказу"
+        ></textarea>
+      </div>
+
+      <hr />
+      <h3>Как с Вами связаться?</h3>
+      <div class="contact-group">
+        <div>
+          <label for="NameId">Имя:</label>
+          <input
+            id="NameId"
+            type="text"
+            title="например, Вася"
+            placeholder="Введите Ваше имя..."
+            required
+          />
+        </div>
+        <div>
+          <label for="PhoneId">Телефон:</label>
+          <input
+            id="PhoneId"
+            type="tel"
+            pattern="\+?[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+            title="123-456-7890"
+            placeholder="Ваш номер телефона..."
+            required
+          />
+        </div>
+      </div>
+
+      <h3>Адрес</h3>
+      <div>
+        <textarea
+          id="AdressID"
+          rows="4"
+          cols="40"
+          placeholder="Куда доставить пиццу?"
+          required
+        ></textarea>
+      </div>
+      <hr />
+      <div>
+        <button type="reset">Отмена</button>
+        <button type="submit">Заказать</button>
+      </div>
+    </form>
+  </body>
+</html>
