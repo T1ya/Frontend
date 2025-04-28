@@ -1,0 +1,25 @@
+.card {
+    background-color: lightcoral;
+    padding: 14px;
+    border-radius: 18px;
+    height: 400px;
+    width: 300px;
+}
+
+.container-row{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.container-col{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.container-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap:25px 50px;
+}

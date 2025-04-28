@@ -1,20 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: whitesmoke;
-    font-family: "Covered By Your Grace", cursive;
-    font-weight: 400;
-    font-style: normal;
+body {
+  background-color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-header{
-    background-image: url(./images/coffee-image.jpg);
-    height: 400px;
-    background-position: center;
-    background-size: cover;
+header {
+  background-image: url(./images/coffee-image.jpg);
+  height: 500px;
+  background-position: 50% 43%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Covered By Your Grace", cursive;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+  text-indent: 60px; /* оступ, а то надпись идёт чуть слева кофейной кружки */
+  margin: 0 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* тень для заголовка */
+}
+
+main {
+  padding: 0 20px;
+}
+
+h2 {
+  color: #553a1e; /* кофейный цвет */
+  border-bottom: 2px solid #553a1e; /* Линия, визуально отделяет заголовки в секциях */
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+p {
+  margin-bottom: 10px;
+  text-align: justify;
+  color: #333;
+  font-size: 1.1rem;
+  text-indent: 30px;
+}
+
+a {
+  color: #553a1e;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  border-bottom: 1px dashed #553a1e;
+  transition: color 0.4s, border-bottom-color 0.4s; /* Анимация */
+  margin-bottom: 10px; /* Отступ, а то слипается с заголовком */
+  display: inline-block;
+}
+
+a:hover {
+  color: #c94f29;
+  border-bottom-color: #c94f29; /* Цвет меняется при наведении */
+}
+
+section {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #fffbe6; /* фон для секций */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* тень для секций */
+  border-radius: 8px;
 }
