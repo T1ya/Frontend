@@ -43,7 +43,7 @@ console.log(newArrWithPrefix(fruits,"pine"));
 
 function gardener(toDo, plant) {
     try {
-        if (typeof toDo != "function") {
+        if (typeof toDo !== "function") {
             throw new Error("First argument should be a function")
         }
         if(typeof plant !== "string" || !plant) {
@@ -53,7 +53,6 @@ function gardener(toDo, plant) {
     } catch (error) {
        console.error("Error caught: ", error.message)
     }
-    
 }
 
 function toWater(plant) {
