@@ -42,7 +42,18 @@ console.log(newArrWithPrefix(fruits,"pine"));
 // Попробуйте придумать функции для других операций и предметов, с которыми может работать садовник. 🧑‍🌾
 
 function gardener(toDo, plant) {
-    toDo(plant);
+    try {
+        if (typeof toDo != "function") {
+            throw new Error("First argument should be a function")
+        }
+        if(typeof plant !== "string" || !plant) {
+            throw new Error("Error - wrong plant name")
+        }
+        toDo(plant);
+    } catch (error) {
+       console.error("Error caught: ", error.message)
+    }
+    
 }
 
 function toWater(plant) {
@@ -61,4 +72,7 @@ console.log("------------------------------")
 console.log("Task 3:")
 gardener(toWater,"roses");
 gardener(toTrim,"grass");
+gardener(toPlant);
+gardener("quack","cucumbers");
+gardener(toTrim,3)
 gardener(toPlant,"cucumbers");
