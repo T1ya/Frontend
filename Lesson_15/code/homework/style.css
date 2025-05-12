@@ -1,0 +1,13 @@
+div{
+    margin: 10px;
+}
+
+.group{
+     width: 280px;
+     display:flex;
+     justify-content: space-between;
+};
+
+.button {
+    border-radius: 5px;
+}
