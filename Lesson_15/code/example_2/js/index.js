@@ -1,4 +1,3 @@
-
 const form = document.getElementById("student-form");
 const emailInput = form.elements["email"];
 const germanInput = form.elements["german"];
