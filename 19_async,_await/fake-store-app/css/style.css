@@ -1,0 +1,34 @@
+*{
+  text-align: center;
+}
+
+#product-section h2 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+}
+#product-list {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: center; 
+}
+
+#product-list h2 {
+  align-items: center;
+}
+
+.product {
+  width: 200px; 
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
