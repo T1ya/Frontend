@@ -15,9 +15,9 @@ function renderAnimals(animals) {
     }
 
     animals.forEach(animal => {
-        const animalCard = document.createElement("div");
-        animalCard.innerHTML=`<span>${animal.nickname}</span>, <span>${animal.age}</span>, <span>${animal.breed}</span>`;
-        animalsContainer.appendChild(animalCard);
+        const li = document.createElement("li");
+        li.innerHTML=`<span>${animal.nickname}</span>, <span>${animal.age}</span>, <span>${animal.breed}</span>`;
+        animalsContainer.appendChild(li);
     });
 }
 

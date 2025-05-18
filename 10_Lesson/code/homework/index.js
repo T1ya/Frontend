@@ -3,12 +3,12 @@
 // Исходный массив должен остаться неизмененным после вызова метода.
 function returnAndSwap(arr) {
   const result = [...arr];
-  const firstElement = result.shift();
-  const lastElement = result.pop();
+  // const firstElement = result.shift();
+  // const lastElement = result.pop();
 
-  result.unshift(lastElement);
-  result.push(firstElement);
-
+  // result.unshift(lastElement);
+  // result.push(firstElement);
+  [result[0], result[result.length-1]] = [arr[arr.length-1], arr[0]];
   return result;
 }
 
@@ -31,3 +31,10 @@ console.log("2. copied array: ", copyArray);
 
 capitalizeFirstElement(originalArray);
 console.log("3. modified original array: ", originalArray);
+
+
+//*Deconstruction assemblance */
+const arr = [[1,2,3],["Igor","John","bob"], {isDrunk: true}];
+
+const[[,secondNum],[,secondName],isDrunk] = arr;
+console.log(secondNum, secondName, isDrunk);

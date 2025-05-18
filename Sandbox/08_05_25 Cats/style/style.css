@@ -1,0 +1,11 @@
+.image {
+    border-radius: 25px;
+    margin:10px;
+    width: 280px
+}
+
+button {
+    height:40px;
+    width: auto;
+    border-radius: 5px;
+}

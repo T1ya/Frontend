@@ -1,0 +1,11 @@
+{
+    "name":"John Sparrow Legs",
+    "numberOfEyes":1,
+    "url":"https://prazdnikon.ru/wp-content/uploads/2019/08/cartoon-pirate-231x300.png",
+    "numberOfLegs":1,
+    "favoriteDrink":"rum",
+    "parrots":[
+        {"name":"BillyBoy"},
+        {"name":"BettyGirl"}
+    ]
+}

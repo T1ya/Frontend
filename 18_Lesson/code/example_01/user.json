@@ -1,0 +1,10 @@
+{
+  "name": "john",
+  "age": 18,
+   "address": {
+    "PLZ": 123456,
+    "street": "Unter der Linden",
+    "haus": 12
+  },
+  "kids":["Ivan" ,"Andrey"]
+}
